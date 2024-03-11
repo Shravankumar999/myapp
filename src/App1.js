@@ -1,7 +1,11 @@
 import React from "react";
 
-function App1(props) {
+
+export default function App1(props) {
+    App1.defaultProps = {name: "Shravan", age: 20};
     return (
-        <div>Hello {props.name}. You are {props.age} </div>
+        <div>
+            Hello {props.name}. You are {props.age} 
+        </div>
     )
 }
