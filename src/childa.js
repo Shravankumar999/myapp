@@ -7,7 +7,7 @@ const {user,setUser} = UserContext(UserContext);
   return (
     <div>
        <h2>Hello {user} from Child component</h2>
-      <button>Change to Cathy</button>
+      <button onClick={()=>setUser()}>Change to Cathy</button>
     </div>
   )
 }
